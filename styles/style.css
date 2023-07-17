@@ -13,9 +13,9 @@ body {
 }
 
 .header__menu {
-  padding: 43px 0 43px 0;
   display: flex;
   align-items: center;
+  padding: 43px 0 43px 0;
   color: #000;
   font-family: Raleway;
   font-weight: 400;
@@ -57,13 +57,13 @@ body {
 }
 
 .address {
-  padding: 5px 1px 7px 1px;
   display: grid; 
   justify-self: end;
   justify-content: end;
   align-items: center;
   align-content: center;
   width: 240px;
+  padding: 5px 1px 7px 1px;
   color: #000;
   font-family: Raleway;
   font-weight: 400;
@@ -72,9 +72,39 @@ body {
   line-height: 24.3px;
 }
 
+
+
+
 .cover {
-  width: 1440px;
+  /* display: grid;  */
+  /* position: relative;
+  z-index: 0; */
+  width: 100%;
   height: 757px;
   margin: 0;
   padding: 0;
+  background-image: url(/images/cover.jpg);
+  background-size: cover;
 }
+
+.overlay {
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6000000238418579);
+  background-size: cover;
+  padding: 10px 0;
+
+}
+
+
+/* .cover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0 0 0 / 0.7);
+  z-index: -1; */
